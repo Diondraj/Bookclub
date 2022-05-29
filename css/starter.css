@@ -86,7 +86,7 @@ h3{
     width: 90%;
 }
 #bcm{
-    box-shadow: 10px 1px 71px -14px rgba(0, 0, 0, 0.14);
+    box-shadow: 10px 4px 42px 14px rgb(0 0 0 / 14%);
 }
 .card-body>h4{
     margin-bottom: 1rem;
