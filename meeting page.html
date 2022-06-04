@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meeting board</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/starter.css" rel="stylesheet">
+</head>
+<body>
+    <nav id="mainNavbar"class="navbar navbar-primary navbar-expand-md">
+        <a href="index.html" class="navbar-brand"><img src="images/book club logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Community</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search books by title or ISBN" aria-label="Search">
+                <button class="btn" type="submit"><img src="images/mag_glass.png"></button>
+              </form>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="Sign_up.html" class="nav-link">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Log in</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container-xxl">
+        <img src="images/orange vector2.png" id="ovecsix">
+        <img src="images/purplevectortwo.png" id="pvecseven">
+        <article class="col-sm-12 col-md-12 flex-lg-column mx-auto align-items-start justify-content-start mb-2" id="Current">
+            <div class="col-12 titlebanner">
+                <br><h1 class="my-2 mx-2 pb-4 text-white"><b>The fault in our stars</b></h1>
+            </div>
+                <div class="container-xxl">
+                    <div class="row justify-content-center align-items-start my-5 mx-4 pb-3" id="meetingbox">
+                        <div class="row justify-content-center align-items-center flex-sm-column flex-md-row flex-lg-row flex-xl-row flex-xxl-row ">
+                            
+                            <div class="row text-sm-center text-lg-start justify-content-center align-items-start col-lg-3 col-md-8 col-sm-8" id="meetingOne">
+                                <div>
+                                    <div class="oneOne">
+                                        <img src="images/TFIOS.jpg" style="width: 60%">
+                                    </div>
+                                    <div class="oneTwo">
+                                        <p><b>Summary</b>: The Fault In Our Stars is a fabulous book by John Green about a young teenage girl who has been diagnosed with lung cancer and attends a cancer support group.</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row text-sm-center text-lg-start flex-sm-row justify-content-center align-items-center col-lg-2 col-md-8 col-sm-8" id="meetingTwo">
+                                <div class="twoOne">
+                                    <img src="images/author.jpg" style="width: 60%">
+                                </div>
+                                <div class="twoTwo">
+                                    <h5>Author:</h5>
+                                    <p>John Green</p>
+                                </div>
+                                <div class="twoThree m-0 p-0 justify-content-sm-center align-items-sm-center">
+                                    <a href=""><img src="images/sendicon.png"></a>
+                                    <a href=""><img src="images/emailicon.png"></a>
+                                    <a href=""><img src="images/twittericon.png"></a>
+                                    <a href=""><img src="images/facebookicon.png"></a>
+                                </div>
+                                <div class="twoFour">
+                                    <p>Book club rating</p>
+                                    <div class="justify-content-center">
+                                        <span class="rating__result"></span> 
+                                       <i class="rating__star far fa-star"></i>
+                                       <i class="rating__star far fa-star"></i>
+                                       <i class="rating__star far fa-star"></i>
+                                       <i class="rating__star far fa-star"></i>
+                                       <i class="rating__star far fa-star"></i>
+                                    </div>
+                              
+                                </div>
+                                <div class="twoFive">
+                                    <a href="instagram.com">Go to reviews</a>
+                                </div>
+                                <div class="twoSix p-1 w-100">
+                                    <a href="https://www.amazon.com/Fault-Our-Stars-John-Green/dp/014242417X"><button class="btn btn-primary text-white">Buy on Amazon</button></a>
+                                </div>
+                                <div class="twoSeven p-1 w-100">
+                                    <a href="https://www.amazon.com/Fault-Our-Stars-John-Green/dp/014242417X"><button class="btn btn-light btn-outline-primary">Add to Wishlist</button></a>
+                                </div>  
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12 d-sm-block d-none" id="reviewbox">
+                                <div class="card-body">
+                                    <ul class="list-style-none">
+                                        <li class="mt-4">
+                                            <h4>Review of this bookclub</h4>
+                                            <div class="d-flex align-items-center">
+                                                <div class="fa fa-smile-o display-5 text-muted"></div>
+                                                <div class="ml-2">
+                                                    <h5 class="mb-0">Positive Reviews</h5>
+                                                    <span class="text-muted">25547 Reviews</span></div>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 47%" aria-valuenow="47" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </li>
+                                        <li class="mt-5">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa fa-frown-o display-5 text-muted"></i>
+                                                <div class="ml-2">
+                                                    <h5 class="mb-0">Negative Reviews</h5>
+                                                    <span class="text-muted">5547 Reviews</span></div>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-orange" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </li>
+                                        <li class="mt-5 mb-5">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa fa-meh-o display-5 text-muted"></i>
+                                                <div class="ml-2">
+                                                    <h5 class="mb-0">Neutral Reviews</h5>
+                                                    <span class="text-muted">547 Reviews</span></div>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="meetingThree col-12 col-lg-3 pt-5 p-0 mt-2 m-0 row text-center align-items-start justify-content-center">
+                                <div>
+                                    <div class="schedulebox p-4">
+                                        <h4> Book club meeting schedule</h4>
+                                        <div class="threeOne">
+                                            <div class="threemember">
+                                                <img src="images/check.png">
+                                            </div>
+                                            <div class="threeSchedule">
+                                                <p>Next meeting starts <b>April 8th 2022 6:00pm EST</b> on Zoom</p>
+                                            </div>
+                                            <div class="threebtn">
+                                                <a href="instagram.com">Join</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+        </article>
+            <div class="container-fluid mt-5" id="discussionpanel">
+                <div class="row">
+                   <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4" id="livechat">
+                        <div class="row">
+                            <div class="col-12 text-white bg-primary text-center p-3">
+                                <h2>Live chat feed for The Fault in Our Stars</h2>
+                            </div>
+                        </div>
+                        <div class="row" id="chatdisclosure">
+                            <div class="col-12 text-secondary">
+                                <p>This is a public live discussion that may include spoilers. If you do not want to spoil the book for yourself, you can click the X on the top right corner to close the chat until your ready to join in on the conversation.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-examplethree" tabindex="0">
+                                <div class="col-12 p-0" id="chatbox">
+                                    <ul id="unordered">
+                                        <li>What do you think of the book everyone?</li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="col-12 p-1 m-0" id="comment-box-holder">  
+                                    <input class="col-8 py-2" type="text" id="comment-box" placeholder="Write a message">
+                                    <button id="post" type="button" class="btn btn-primary btn-sm text-white">Send Message</button>
+                            </div> 
+                        </div>
+                   </div>
+                   <div class="col-sm-0 col-md-0 col-lg-1 col-xl-1 col-xxl-1"></div>
+                   <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xxl-7">
+                    <div class="row">
+                        <div class="col-12" id="review-list">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 bg-primary text-white" id="reviewsection">
+                                            <h2>Review</h2>
+                                        </div>
+                                        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-examplethree" tabindex="0">
+                                            
+                                            <ul>
+                                                <li>
+                                                    <div class="col-12" id="reviewbg">
+                                                        <div class="row">
+                                                            <div class="col-12" id="personOne">
+                                                                <div class="userbox">
+                                                                    <img src="images/avatar1.png" id="userOne">
+                                                                    <div class="row">
+                                                                        <div class="col-12" id="usernameandrate">
+                                                                            <p>James Cordon</p>
+                                                                            <img src="images/star rating.png">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <p>01/01/2022</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <br><h3>Amazing Book</h3>
+                                                                <p>Summary: Lörem ipsum ar lanar sel i havis, nins, podda. Antimodern exojäktig biovis
+                                                                    kroktigt ifall vavynat intrapp eusat epipod oaktat hyposkade, anapadade fåner.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                
+                                                <li>
+                                                    <div class="col-12" id="reviewbg">
+                                                        <div class="row">
+                                                            <div class="col-12" id="personOne">
+                                                                <div class="userbox">
+                                                                    <img src="images/avatar1.png" id="userOne">
+                                                                    <div class="row">
+                                                                        <div class="col-12" id="usernameandrate">
+                                                                            <p>James Cordon</p>
+                                                                            <img src="images/star rating.png">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <p>01/01/2022</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <br><h3>Amazing Book</h3>
+                                                                <p>Summary: Lörem ipsum ar lanar sel i havis, nins, podda. Antimodern exojäktig biovis
+                                                                    kroktigt ifall vavynat intrapp eusat epipod oaktat hyposkade, anapadade fåner.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="col-12" id="reviewbg">
+                                                        <div class="row">
+                                                            <div class="col-12" id="personOne">
+                                                                <div class="userbox">
+                                                                    <img src="images/avatar1.png" id="userOne">
+                                                                    <div class="row">
+                                                                        <div class="col-12" id="usernameandrate">
+                                                                            <p>James Cordon</p>
+                                                                            <img src="images/star rating.png">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <p>01/01/2022</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <br><h3>Amazing Book</h3>
+                                                                <p>Summary: Lörem ipsum ar lanar sel i havis, nins, podda. Antimodern exojäktig biovis
+                                                                    kroktigt ifall vavynat intrapp eusat epipod oaktat hyposkade, anapadade fåner.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 p-1 m-0" id="comment-box-holder">  
+                                            <input class="col-8 py-2" type="text" id="comment-boxTwo" placeholder="Write a message">
+                                            <button id="poston" type="button" class="btn btn-primary btn-sm text-white">Send Message</button>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+    </main>
+    <footer class="container-fluid bg-secondary">
+        <div class="row">
+            <div class="col-12 text-white text-center pt-5 mb-5">
+                <p>Website made by Diondra Evans</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
