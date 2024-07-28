@@ -58,9 +58,12 @@ h3{
     background-color: #FEAC5E;
 }
 .searchbox{
-    border: 1px solid #4BC0C8;
-    width: 10%;
-    margin-left: 392px;
+    width: 100%;
+}
+#display{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 .navbar-toggler{
     background-color: #C779D0;
