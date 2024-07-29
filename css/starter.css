@@ -60,11 +60,6 @@ h3{
 .searchbox{
     width: 100%;
 }
-#display{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
 .navbar-toggler{
     background-color: #C779D0;
 }
@@ -272,11 +267,10 @@ h3{
     height: 44px;
 }
 #ovecseven{
-    bottom: -987px;
-    z-index: -1;
+    z-index: 4;
     position: absolute;
-    width: 50%;
-    left: -96px;
+    width: 100px;
+    left: 0;
 }
 #secTwo{
     margin-top: 100px;

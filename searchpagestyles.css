@@ -1,0 +1,17 @@
+#display{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 25px;
+    border: 1px solid peru;
+}
+
+#display div{
+    height: 500px;
+    background-color: white;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
