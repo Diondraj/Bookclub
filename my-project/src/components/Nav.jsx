@@ -1,11 +1,24 @@
 import { FaSun } from 'react-icons/fa';
 import { FaMoon } from 'react-icons/fa';
 
-
- export default function Hero({isDarkMode, setIsDarkMode}) {
+ export default function Nav({isDarkMode, setIsDarkMode, setSearchInput, searchInput}) {
      const toggleTheme = () =>{
         setIsDarkMode(prev => !prev)
     }
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const wordsArray = searchInput.trim().split(' ');
+    const updatedInput = wordsArray.join('+');
+
+    console.log('Input:', searchInput);
+    console.log('Updated:', updatedInput);
+
+    setSearchInput(updatedInput); // Function passed down via props
+  };
+
   return (
    <div>
      <nav className={`navbar navbar-expand-lg ${
@@ -28,9 +41,10 @@ import { FaMoon } from 'react-icons/fa';
                             <a className="nav-link" href="#">Community</a>
                             </li>
                         </ul>
-                            <form className="d-flex" role="search">
-                                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                                <button className={`btn ${isDarkMode ? 'btn-light' : 'btn-dark'}`} type="submit">Search</button>
+                            <form className="d-flex" role="search" onSubmit={handleSubmit}>
+                                <input className="form-control me-2" type="search" aria-label="Search" 
+                                placeholder="Search books..." value={searchInput} onChange={(e) => setSearchInput(e.target.value)}/>
+                                <button className={`btn ${isDarkMode ? 'btn-light' : 'btn-dark'}`} type="submit" onSubmit={handleSubmit} id="topsearchForm">Search</button>
                             </form>
                         <ul className="navbar-nav w-25 d-flex flex-row me-auto justify-content-evenly mb-2 mb-lg-0">
                             <li className="nav-item">
