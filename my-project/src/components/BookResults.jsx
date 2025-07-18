@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 
-function BookResults({searchInput}){
+function BookResults({searchInput, ref}){
     const [books, setBooks]= useState([]);
     const API_KEY = import.meta.env.VITE_GOOGLE_BOOKS_KEY;
     const searchQuery = searchInput;
@@ -16,7 +16,7 @@ function BookResults({searchInput}){
          .catch(err => console.error("Error fetching books:", err));
     }, [searchQuery]);
     return(
-        <div>
+        <div ref={ref} id="books-results">
             <h2 class="mb-5">Book Results</h2>
             <div class="container text-center">
                 <div class="row">

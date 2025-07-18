@@ -1,12 +1,12 @@
 export default function Bookofthemonth({isDarkMode}) {
   return (
     <div className="hero Card-bg d-flex flex-column align-items-center justify-content-center">
-    <div className={`hero-text card ${isDarkMode ? 'bg-secondary text-bg-dark' : 'bg-light '}`}>
+    <div className={`hero-text m-3 card ${isDarkMode ? 'bg-secondary text-bg-dark' : 'bg-light '}`}>
         <div className="card-header">
             Featured Book Club of the Month
         </div>
         <div className="d-flex flex-row align-items-center justify-content-center">
-            <div className="h-100 w-50 d-flex flex-column align-items-center justify-content-center">
+            <div className="h-100 w-50 d-flex flex-column align-items-center justify-content-center p-3">
                 <img
                     src="/romance.jpg"
                     alt="good girl complex"

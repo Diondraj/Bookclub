@@ -1,7 +1,7 @@
 import { FaSun } from 'react-icons/fa';
 import { FaMoon } from 'react-icons/fa';
 
- export default function Nav({isDarkMode, setIsDarkMode, setSearchInput, searchInput}) {
+ export default function Nav({isDarkMode, setIsDarkMode, setSearchInput, searchInput, scrollToResults}) {
      const toggleTheme = () =>{
         setIsDarkMode(prev => !prev)
     }
@@ -44,7 +44,7 @@ import { FaMoon } from 'react-icons/fa';
                             <form className="d-flex" role="search" onSubmit={handleSubmit}>
                                 <input className="form-control me-2" type="search" aria-label="Search" 
                                 placeholder="Search books..." value={searchInput} onChange={(e) => setSearchInput(e.target.value)}/>
-                                <button className={`btn ${isDarkMode ? 'btn-light' : 'btn-dark'}`} type="submit" onSubmit={handleSubmit} id="topsearchForm">Search</button>
+                                <button className={`btn ${isDarkMode ? 'btn-light' : 'btn-dark'}`} type="submit" onClick={scrollToResults} onSubmit={handleSubmit} id="topsearchForm">Search</button>
                             </form>
                         <ul className="navbar-nav w-25 d-flex flex-row me-auto justify-content-evenly mb-2 mb-lg-0">
                             <li className="nav-item">

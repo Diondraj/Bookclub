@@ -1,4 +1,4 @@
-import { useState } from 'react'; 
+import { useState, useRef } from 'react'; 
 import Alert from 'bootstrap/js/dist/alert';
 import Nav from './components/Nav'
 import Hero from './components/Hero'
@@ -8,12 +8,13 @@ import BookResults from './components/BookResults';
 import { Tooltip, Toast, Popover } from 'bootstrap';
 
 function App() {
-      const [searchInput, setSearchInput] = useState('');
+    const [searchInput, setSearchInput] = useState('');
     const [isDarkMode, setIsDarkMode] = useState(false);
-  
+    const resultsRef = useRef(null);
+
     return (
     <div className = "app">  
-        <Nav searchInput={searchInput} setSearchInput={setSearchInput} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
+        <Nav searchInput={searchInput} setSearchInput={setSearchInput} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} scrollToResults={() => resultsRef.current.scrollIntoView({ behavior: 'smooth' })}/>
         <div className={`row ${isDarkMode ? 'bg-dark text-white' : 'light-mode'} `}>
             <div className="col-7">
             <Hero isDarkMode={isDarkMode}/>
@@ -23,8 +24,8 @@ function App() {
             </div>
         </div>
         <div className={`row ${isDarkMode ? 'bg-dark text-white' : 'light-mode'} `}>
-            <div className="col-12 p-0" id="BookResults">
-                <BookResults searchInput={searchInput} setSearchInput={setSearchInput} isDarkMode={isDarkMode}/>
+            <div className="col-12 p-0" id="BookResults" >
+                <BookResults searchInput={searchInput} setSearchInput={setSearchInput} isDarkMode={isDarkMode} ref={resultsRef}/>
             </div>
         </div> 
     </div>
