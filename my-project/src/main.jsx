@@ -4,11 +4,14 @@ import './styles/main.scss'
 import * as bootstrap from 'bootstrap'
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
-import './styles/main.scss'; // <- using Sass
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <BrowserRouter>
     <App />
-  </React.StrictMode>
+  </BrowserRouter>
 );
+

@@ -1,5 +1,8 @@
+import { Routes, Route, Link } from 'react-router-dom';
 import { FaSun } from 'react-icons/fa';
 import { FaMoon } from 'react-icons/fa';
+
+
 
  export default function Nav({isDarkMode, setIsDarkMode, setSearchInput, searchInput, scrollToResults}) {
      const toggleTheme = () =>{
@@ -35,10 +38,10 @@ import { FaMoon } from 'react-icons/fa';
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav w-25 d-flex flex-row justify-content-evenly me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
+                            <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link" href="#">Community</a>
+                            <Link className="nav-link" to="/community">Community</Link>
                             </li>
                         </ul>
                             <form className="d-flex" role="search" onSubmit={handleSubmit}>
@@ -48,10 +51,7 @@ import { FaMoon } from 'react-icons/fa';
                             </form>
                         <ul className="navbar-nav w-25 d-flex flex-row me-auto justify-content-evenly mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Sign up</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Log in</a>
+                                <Link className="nav-link" to="/LoginSignup">Sign up / Login</Link>
                             </li>
                         </ul>
                        {isDarkMode ? (
@@ -71,6 +71,7 @@ import { FaMoon } from 'react-icons/fa';
                         </div>
                     </div>
         </nav>
+        
    </div>
         
   )

@@ -19,7 +19,7 @@ export default function Bookofthemonth({isDarkMode}) {
             <div className="w-50 card-body">
                 <h5 className="card-title">Over <span className="text-success">100</span> bookclub members</h5>
                 <p className="card-text">Good Girl Complex is a contemporary romance novel about Mackenzie “Mac” Cabot, a rule-following, people-pleasing college student who moves to the beach town of Avalon Bay for school.</p>
-                <a href="#" target="_blank" class="external">Read reviews</a>
+                <a href="#" target="_blank" className="external">Read reviews</a>
                 <p className="card-text">Book rating</p>
                 <a href="#" className={`${isDarkMode ? 'btn btn-primary text-white' : 'btn btn-primary text-white'}`}> Join this bookclub</a>            
             </div>

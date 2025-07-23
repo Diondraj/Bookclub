@@ -17,9 +17,9 @@ function BookResults({searchInput, ref}){
     }, [searchQuery]);
     return(
         <div ref={ref} id="books-results">
-            <h2 class="mb-5">Book Results</h2>
-            <div class="container text-center">
-                <div class="row">
+            <h2 className="mb-5">Book Results</h2>
+            <div className="container text-center">
+                <div className="row">
                         {books.map((book) => {
                             const info = book.volumeInfo;
                             return (
